@@ -1,0 +1,8 @@
+.vc_row {margin-bottom:30px;}
+.vc_row.no-gutter {margin-left:-60px; margin-right:-60px; margin-bottom:0;}
+.vc_row.no-gutter .vc_column_container > .vc_column-inner {padding:0;}
+.vc_row.no-gutter .wpb_content_element {margin-bottom:0;}
+
+@media (max-width: 767px) {
+.vc_row.no-gutter {margin-left:-20px; margin-right:-20px;} 
+}
