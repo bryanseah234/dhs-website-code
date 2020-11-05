@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'dhs-icon';
+  src: url('dhs-icon.eot?19651619');
+  src: url('dhs-icon.eot?19651619#iefix') format('embedded-opentype'),
+       url('dhs-icon.woff2?19651619') format('woff2'),
+       url('dhs-icon.woff?19651619') format('woff'),
+       url('dhs-icon.ttf?19651619') format('truetype'),
+       url('dhs-icon.svg?19651619#dhs-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'dhs-icon';
+    src: url('dhs-icon.svg?19651619#dhs-icon') format('svg');
+  }
+}
+*/
+ 
+[class^="icon-"]:before, [class*=" icon-"]:before,
+#maximage p.chinese:after,
+.page-content ul li:before,
+.toggle-more p:after,
+.download a:before,
+.link a:before,
+.whats-new .eg-icon-down-open:before {
+	font-family: "dhs-icon";
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	display: inline-block;
+	text-decoration: inherit;
+   
+	/* For safety - reset parent styles, that can break glyph codes*/
+	font-variant: normal;
+	text-transform: none;
+  
+	/* Font smoothing. That was taken from TWBS */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+ 
+.icon-note:before { content: '\e800'; } /* '' */
+.icon-link:before { content: '\e801'; } /* '' */
+.icon-mic:before { content: '\e802'; } /* '' */
+.icon-calender:before { content: '\e803'; } /* '' */
+.icon-download:before { content: '\e804'; } /* '' */
+.icon-record:before { content: '\e805'; } /* '' */
+.icon-dots:before { content: '\e806'; } /* '' */
+.icon-arrow-up:before { content: '\e807'; } /* '' */
+.icon-arrow-down:before { content: '\e808'; } /* '' */
+.icon-arrow-left:before { content: '\e809'; } /* '' */
+.icon-arrow-right:before { content: '\e80a'; } /* '' */
+
+#maximage p.chinese:after {
+	content: '\e806';
+	font-size: 2px;
+	vertical-align: super;
+	margin-left: 5px;
+}
+
+.page-content ul li:before {
+	content: '\e805';
+    font-size: 10px;
+    position: absolute;
+    left: -15px;
+    top: 5px;
+}
+
+.toggle-more p:after {
+	content: '\e806';
+	font-size: 2px;
+	vertical-align: middle;
+	margin-left: 10px;
+	margin-top: -3px;
+}
+
+.download a:before {
+	content: '\e804';
+	font-size: 14px;
+	vertical-align: middle;
+	margin-top: -5px;
+	margin-right: 5px;
+}
+
+.link a:before {
+	content: '\e801';
+	font-size: 14px;
+	vertical-align: middle;
+	margin-top: -5px;
+	margin-right: 5px;
+}
+
+.whats-new .eg-icon-down-open:before {
+    content: '\e808';
+	width: auto;
+	margin: 0;
+	font-size: 8px;
+	vertical-align: middle;
+}
